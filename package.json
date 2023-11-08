@@ -1,0 +1,31 @@
+{
+  "name": "simletest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.5",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.1.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.1",
+    "prettier": "^3.0.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/**/*/**/*.{ts,js}",
+    "html": {
+      "enabled": true
+    }
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "ts-node": "^10.9.1"
+  }
+  
+}
